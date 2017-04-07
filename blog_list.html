@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>HelloCare Blog</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body class="blog">
+<header class="blog-list-header">
+    <nav class="navbar navbar-default navbar-fixed-top" id="blog-list-navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <input type="text" class="form-control" placeholder="Search" style="display: none;">
+                <button class="mobile-search-btn js-search-open hidden-lg hidden-md hidden-sm"><i
+                        class="icon ion-ios-search"></i></button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#blog-navbar"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/blue-logo.png" id="app-logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="blog-navbar">
+                <form class="navbar-form navbar-left hidden-xs">
+                    <div class="form-group inner-addon">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="submit" class="btn btn-default"><i class="icon ion-ios-search"></i></button>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right blog-list-nav-links">
+                    <li class="dropdown hidden-xs">
+                        <a href="#" class="text-capitalize js-nav-links dropdown-toggle" id="profile-link"
+                           data-toggle="dropdown">
+                            <figure class="avatar avatar-lg">
+                                <img src="img/avatar-1.png">
+                            </figure>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="doctor_profile.html">Profile</a></li>
+                            <li><a href="blog_list.html">Log Out</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="doctor_profile.html">Profile</a></li>
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="blog_list.html">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="blog-list-content">
+    <div class="search-overlay">
+        <a href="javascript:void(0)" class="close-btn js-search-close"><i class="ion-ios-close-empty"></i></a>
+
+        <div class="search-overlay-content">
+            <div class="container">
+                <div class="form-group inner-addon">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button type="submit" class="btn btn-default"><i class="icon ion-ios-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="category-navbar">
+        <div class="container">
+            <div class="category-nav-container">
+                <ul class="nav nav-pills category-nav">
+                    <li style="padding-top: 10px; padding-right: 10px; color: rgba(0,0,0,0.44)">Categories you follow
+                    </li>
+                    <li class="category-link-container"><a class="transparent-btn text-center" href="#category-modal"
+                                                           data-toggle="modal"><i
+                            class="icon ion-android-add"></i> Customize
+                        Your Feed</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">New & Trending</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Diet & Exercise</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Research</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Surgery</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Cancer</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">New & Trending</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Diet & Exercise</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Research</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Surgery</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Cancer</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">New & Trending</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Diet & Exercise</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Research</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Surgery</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Cancer</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">New & Trending</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Diet & Exercise</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Research</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Surgery</a></li>
+                    <li class="category-link-container"><a href="#" class="category-link">Cancer</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="top-btn js-top-btn">
+        <i class="icon ion-ios-arrow-up"></i>
+    </div>
+    <a class="compose-post-btn js-compose-btn" data-toggle="tooltip" data-placement="top" title="Compose blog post">
+        <i class="icon ion-compose"></i>
+    </a>
+
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="hero-content">
+                    <div class="h2">Welcome to HelloCare.</div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="img/doctor-icons.png" class="animated bounce">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="blog-list">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-7 col-sm-12">
+                    <div class="blog-post-list">
+                        <div class="js-blog-posts">
+                            <div class="panel panel-default blog-post">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-1 col-xs-2">
+                                            <figure class="avatar avatar-lg">
+                                                <img src="img/avatar-1.png"/>
+                                            </figure>
+
+                                        </div>
+                                        <div class="col-sm-11 col-xs-10">
+                                            <div class="blog-post-summary">
+                                                <div class="author-name-container">
+                                                    <a class="h3 author-name" href="#" data-toggle="popover"
+                                                       data-trigger="hover" data-placement="bottom"
+                                                       data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>Dr. Kanyinsola Silva
+                                                    </a>
+                                                    <a class="transparent-btn follow-btn" href="#">Follow</a>
+                                                </div>
+
+                                                <p class="author-social-stats">
+                                                    <span>56 Following</span>
+                                                    <span>|</span>
+                                                    <span>156 Followers</span>
+                                                </p>
+
+                                                <div class="blog-thumb-date text-capitalize">jan 23, 2017</div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <a class="blog-post-img-container" href="blog_post.html">
+                                        <div class="blog-post-img"></div>
+                                    </a>
+
+                                    <div class="blog-thumbtext-container">
+                                        <a class="blog-title" href="blog_post.html">Exercise is good for your body</a>
+
+                                        <div class="blog-summary">See how exercise transformed katlin's life — and gave
+                                            her an all-new confidence.
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding: 10px 0">
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 pull-right" id="post-social-links">
+                                            <ul class="list-unstyled">
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Twitter"><i
+                                                        class="icon ion-social-twitter-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Facebook"><i
+                                                        class="icon ion-social-facebook-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Like Post"><i
+                                                        class="icon ion-thumbsup"></i></a></li>
+                                                <li class="pull-left">
+                                                    <a class="post-links" href="#" data-toggle="tooltip"
+                                                       data-placement="bottom"
+                                                       title="Comments"><i class="icon ion-ios-chatbubble-outline"></i>
+                                                        <span>29</span></a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default blog-post">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-1 col-xs-2">
+                                            <figure class="avatar avatar-lg">
+                                                <img src="img/avatar-1.png"/>
+                                            </figure>
+
+                                        </div>
+                                        <div class="col-sm-11 col-xs-10">
+                                            <div class="blog-post-summary">
+                                                <div class="author-name-container">
+                                                    <a class="h3 author-name" href="#" data-toggle="popover"
+                                                       data-trigger="hover" data-placement="bottom"
+                                                       data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>Dr. Kanyinsola Silva
+                                                    </a>
+                                                    <a class="transparent-btn follow-btn" href="#">Follow</a>
+                                                </div>
+
+                                                <p class="author-social-stats">
+                                                    <span>56 Following</span>
+                                                    <span>|</span>
+                                                    <span>156 Followers</span>
+                                                </p>
+
+                                                <div class="blog-thumb-date text-capitalize">jan 23, 2017</div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <a class="blog-post-img-container" href="blog_post.html">
+                                        <div class="blog-post-img"></div>
+                                    </a>
+
+                                    <div class="blog-thumbtext-container">
+                                        <a class="blog-title" href="blog_post.html">Exercise is good for your body</a>
+
+                                        <div class="blog-summary">See how exercise transformed katlin's life — and gave
+                                            her an all-new confidence.
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding: 10px 0">
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 pull-right" id="post-social-links">
+                                            <ul class="list-unstyled">
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Twitter"><i
+                                                        class="icon ion-social-twitter-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Facebook"><i
+                                                        class="icon ion-social-facebook-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Like Post"><i
+                                                        class="icon ion-thumbsup"></i></a></li>
+                                                <li class="pull-left">
+                                                    <a class="post-links" href="#" data-toggle="tooltip"
+                                                       data-placement="bottom"
+                                                       title="Comments"><i class="icon ion-ios-chatbubble-outline"></i>
+                                                        <span>29</span></a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default blog-post">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-1 col-xs-2">
+                                            <figure class="avatar avatar-lg">
+                                                <img src="img/avatar-1.png"/>
+                                            </figure>
+
+                                        </div>
+                                        <div class="col-sm-11 col-xs-10">
+                                            <div class="blog-post-summary">
+                                                <div class="author-name-container">
+                                                    <a class="h3 author-name" href="#" data-toggle="popover"
+                                                       data-trigger="hover" data-placement="bottom"
+                                                       data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>Dr. Kanyinsola Silva
+                                                    </a>
+                                                    <a class="transparent-btn follow-btn" href="#">Follow</a>
+                                                </div>
+
+                                                <p class="author-social-stats">
+                                                    <span>56 Following</span>
+                                                    <span>|</span>
+                                                    <span>156 Followers</span>
+                                                </p>
+
+                                                <div class="blog-thumb-date text-capitalize">jan 23, 2017</div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <a class="blog-post-img-container" href="blog_post.html">
+                                        <div class="blog-post-img"></div>
+                                    </a>
+
+                                    <div class="blog-thumbtext-container">
+                                        <a class="blog-title" href="blog_post.html">Exercise is good for your body</a>
+
+                                        <div class="blog-summary">See how exercise transformed katlin's life — and gave
+                                            her an all-new confidence.
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding: 10px 0">
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 pull-right" id="post-social-links">
+                                            <ul class="list-unstyled">
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Twitter"><i
+                                                        class="icon ion-social-twitter-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Facebook"><i
+                                                        class="icon ion-social-facebook-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Like Post"><i
+                                                        class="icon ion-thumbsup"></i></a></li>
+                                                <li class="pull-left">
+                                                    <a class="post-links" href="#" data-toggle="tooltip"
+                                                       data-placement="bottom"
+                                                       title="Comments"><i class="icon ion-ios-chatbubble-outline"></i>
+                                                        <span>29</span></a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default blog-post">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-1 col-xs-2">
+                                            <figure class="avatar avatar-lg">
+                                                <img src="img/avatar-1.png"/>
+                                            </figure>
+
+                                        </div>
+                                        <div class="col-sm-11 col-xs-10">
+                                            <div class="blog-post-summary">
+                                                <div class="author-name-container">
+                                                    <a class="h3 author-name" href="#" data-toggle="popover"
+                                                       data-trigger="hover" data-placement="bottom"
+                                                       data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>Dr. Kanyinsola Silva
+                                                    </a>
+                                                    <a class="transparent-btn follow-btn" href="#">Follow</a>
+                                                </div>
+
+                                                <p class="author-social-stats">
+                                                    <span>56 Following</span>
+                                                    <span>|</span>
+                                                    <span>156 Followers</span>
+                                                </p>
+
+                                                <div class="blog-thumb-date text-capitalize">jan 23, 2017</div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <a class="blog-post-img-container" href="blog_post.html">
+                                        <div class="blog-post-img"></div>
+                                    </a>
+
+                                    <div class="blog-thumbtext-container">
+                                        <a class="blog-title" href="blog_post.html">Exercise is good for your body</a>
+
+                                        <div class="blog-summary">See how exercise transformed katlin's life — and gave
+                                            her an all-new confidence.
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding: 10px 0">
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 pull-right" id="post-social-links">
+                                            <ul class="list-unstyled">
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Twitter"><i
+                                                        class="icon ion-social-twitter-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Facebook"><i
+                                                        class="icon ion-social-facebook-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Like Post"><i
+                                                        class="icon ion-thumbsup"></i></a></li>
+                                                <li class="pull-left">
+                                                    <a class="post-links" href="#" data-toggle="tooltip"
+                                                       data-placement="bottom"
+                                                       title="Comments"><i class="icon ion-ios-chatbubble-outline"></i>
+                                                        <span>29</span></a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default blog-post">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-1 col-xs-2">
+                                            <figure class="avatar avatar-lg">
+                                                <img src="img/avatar-1.png"/>
+                                            </figure>
+
+                                        </div>
+                                        <div class="col-sm-11 col-xs-10">
+                                            <div class="blog-post-summary">
+                                                <div class="author-name-container">
+                                                    <a class="h3 author-name" href="#" data-toggle="popover"
+                                                       data-trigger="hover" data-placement="bottom"
+                                                       data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>Dr. Kanyinsola Silva
+                                                    </a>
+                                                    <a class="transparent-btn follow-btn" href="#">Follow</a>
+                                                </div>
+
+                                                <p class="author-social-stats">
+                                                    <span>56 Following</span>
+                                                    <span>|</span>
+                                                    <span>156 Followers</span>
+                                                </p>
+
+                                                <div class="blog-thumb-date text-capitalize">jan 23, 2017</div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <a class="blog-post-img-container" href="blog_post.html">
+                                        <div class="blog-post-img"></div>
+                                    </a>
+
+                                    <div class="blog-thumbtext-container">
+                                        <a class="blog-title" href="blog_post.html">Exercise is good for your body</a>
+
+                                        <div class="blog-summary">See how exercise transformed katlin's life — and gave
+                                            her an all-new confidence.
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding: 10px 0">
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 pull-right" id="post-social-links">
+                                            <ul class="list-unstyled">
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Twitter"><i
+                                                        class="icon ion-social-twitter-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Share on Facebook"><i
+                                                        class="icon ion-social-facebook-outline"></i></a></li>
+                                                <li class="pull-left"><a class="post-links" href="#"
+                                                                         data-toggle="tooltip"
+                                                                         data-placement="bottom"
+                                                                         title="Like Post"><i
+                                                        class="icon ion-thumbsup"></i></a></li>
+                                                <li class="pull-left">
+                                                    <a class="post-links" href="#" data-toggle="tooltip"
+                                                       data-placement="bottom"
+                                                       title="Comments"><i class="icon ion-ios-chatbubble-outline"></i>
+                                                        <span>29</span></a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 hidden-sm hidden-xs">
+                    <p class="feature-blog-heading">Featured Post</p>
+
+                    <div class="panel panel-default blog-post">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-sm-1 col-xs-2">
+                                    <figure class="avatar avatar-lg">
+                                        <img src="img/avatar-1.png"/>
+                                    </figure>
+
+                                </div>
+                                <div class="col-sm-11 col-xs-10">
+                                    <div class="blog-post-summary">
+                                        <div class="author-name-container">
+                                            <a class="h3 author-name" href="#" data-toggle="popover"
+                                               data-trigger="hover" data-placement="bottom"
+                                               data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>Dr. Kanyinsola Silva
+                                            </a>
+                                            <a class="transparent-btn follow-btn" href="#">Follow</a>
+                                        </div>
+
+                                        <p class="author-social-stats">
+                                            <span>56 Following</span>
+                                            <span>|</span>
+                                            <span>156 Followers</span>
+                                        </p>
+
+                                        <div class="blog-thumb-date text-capitalize">jan 23, 2017</div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="blog-thumbtext-container">
+                                <a class="blog-title" href="blog_post.html">Exercise is good for your body</a>
+
+                                <div class="blog-summary">See how exercise transformed katlin's life — and gave
+                                    her an all-new confidence.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="feature-blog-heading">Top Contributors</p>
+
+                    <div class="top-contributors-container">
+                        <div class="contributor">
+                            <figure class="avatar avatar-lg">
+                                <img src="img/avatar-1.png">
+                            </figure>
+                            <a class="h3 author-name" href="#" data-toggle="popover"
+                               data-trigger="hover" data-placement="bottom"
+                               data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>Dr. Kanyinsola Silva
+                            </a>
+
+                            <div class="padded-left">
+                                <p class="author-social-stats">
+                                    <span>56 Following</span>
+                                    <span>|</span>
+                                    <span>156 Followers</span>
+                                </p>
+                                <a class="transparent-btn" href="#">Follow</a>
+
+                            </div>
+
+                        </div>
+                        <div class="contributor">
+                            <figure class="avatar avatar-lg">
+                                <img src="img/avatar-1.png">
+                            </figure>
+                            <a class="h3 author-name" href="#" data-toggle="popover"
+                               data-trigger="hover" data-placement="bottom"
+                               data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>Dr. Kanyinsola Silva
+                            </a>
+
+                            <div class="padded-left">
+                                <p class="author-social-stats">
+                                    <span>56 Following</span>
+                                    <span>|</span>
+                                    <span>156 Followers</span>
+                                </p>
+                                <a class="transparent-btn" href="#">Follow</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="sk-fading-circle js-loader">
+        <div class="sk-circle1 sk-circle"></div>
+        <div class="sk-circle2 sk-circle"></div>
+        <div class="sk-circle3 sk-circle"></div>
+        <div class="sk-circle4 sk-circle"></div>
+        <div class="sk-circle5 sk-circle"></div>
+        <div class="sk-circle6 sk-circle"></div>
+        <div class="sk-circle7 sk-circle"></div>
+        <div class="sk-circle8 sk-circle"></div>
+        <div class="sk-circle9 sk-circle"></div>
+        <div class="sk-circle10 sk-circle"></div>
+        <div class="sk-circle11 sk-circle"></div>
+        <div class="sk-circle12 sk-circle"></div>
+    </div>
+
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <p class="footer-main-text">HelloCare is a registered trademark of Intelligent Campaign Hub.
+                    HelloCare is a financial service built in partnership with Access Bank Nigeria to push financial
+                    inclusion
+                    and make basic banking services accessible to the unbanked and underbanked.</p>
+
+                <p class="footer-main-text">&copy; HelloCare 2017. All rights reserved</p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">social</li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ion-social-facebook"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ion-social-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ion-social-instagram-outline"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">company</li>
+                            <li>
+                                <a href="#">
+                                    <span>About Us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Partners</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Media</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">legal</li>
+                            <li>
+                                <a href="#">
+                                    <span>Terms</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Privacy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>FAQ</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<div class="modal fade" id="category-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><i class="ion-ios-close-empty"></i></button>
+                <div class="h4 modal-title">Choose a category</div>
+            </div>
+            <div class="modal-body">
+                <form class="category-choice-form" style="height: 100%">
+                    <div class="category-choice-container" style="height: 450px; overflow-y: scroll">
+                        <div class="row">
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category1" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category1">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category2" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category2">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category3" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category3">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category5" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category5">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category6" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category6">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category7" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category7">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category5" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category5">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category6" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category6">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category7" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category7">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category5" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category5">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category6" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category6">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 category-choice">
+                                <div class="form-group category-checkbox">
+                                    <label for="category7" class="checkbox-label control-checkbox">
+                                        <img src="img/ambassador1.jpg" class="img-thumbnail">
+                                        <input type="checkbox" id="category7">
+
+                                        <div class="category-name">
+                                            <p class="h4">Research</p>
+                                        </div>
+                                        <div class="custom-checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button type="submit" class="btn add-category-btn pull-right">Add categories</button>
+                                <button type="button" class="btn btn-default close-category-btn pull-right"
+                                        data-dismiss="modal">Close
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/blog.js"></script>
+</html>

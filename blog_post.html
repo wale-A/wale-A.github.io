@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+</head>
+<body class="blog">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top" id="blog-navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#blog-navbar"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/white-logo.png" class="app-logo white"
+                                                      id="white-logo"></a>
+                <a class="navbar-brand" href="#"><img src="img/blue-logo.png" class="app-logo white" id="blue-logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="blog-navbar">
+                <ul class="nav navbar-nav navbar-right blog-nav-links">
+                    <li><a href="#" class="text-capitalize js-nav-links" id="blog-link">Blog</a></li>
+                    <li><a href="#" class="text-capitalize js-nav-links" id="login-link">Sign In</a></li>
+                    <li><a href="#" class="text-capitalize js-nav-links" id="sign-up-link">Sign Up</a></li>
+                    <li>
+                        <a href="#" class="text-capitalize js-nav-links" id="profile-link">
+                            <figure class="avatar avatar-sm">
+                                <img src="img/avatar-1.png">
+                            </figure>
+                            <span style="font-weight: 300">Dr Silva</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="text-capitalize js-nav-links log-out-link" id="log-out-link">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="top-btn js-top-btn">
+        <i class="icon ion-ios-arrow-up"></i>
+    </div>
+    <a class="compose-post-btn js-compose-btn" data-toggle="tooltip" data-placement="top" title="Compose blog post">
+        <i class="icon ion-compose"></i>
+    </a>
+
+    <div class="blog-hero" id="blog-post-hero">
+        <div class="blog-hero-overlay"></div>
+    </div>
+
+    <div class="post-section">
+        <div class="post-text-container">
+
+            <div class="post-text-wrapper">
+                <div class="author-details">
+                    <div class="row">
+                        <div class="col-sm-2 col-xs-3">
+                            <figure class="avatar avatar-xl">
+                                <img src="img/avatar-1.png"/>
+                            </figure>
+
+                        </div>
+                        <div class="col-sm-10 col-xs-9">
+                            <div class="author-name">
+                                <a class="h3" href="#" data-toggle="popover"
+                                   data-trigger="hover" data-placement="bottom"
+                                   data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>Dr. Kanyinsola Silva
+                                </a>
+                                <a href="#" class="transparent-btn hidden-xs">Follow</a>
+
+                            </div>
+
+                            <p class="author-social-stats">
+                                <span>56 Following</span>
+                                <span>|</span>
+                                <span>156 Followers</span>
+                            </p>
+
+                            <div class="post-date text-capitalize">jan 23, 2017</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="post-headline">
+                    <div class="h3">
+                        Exercise is good for your body
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore
+                    eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit
+                    anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore
+                    eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit
+                    anim id est laborum.
+                </p>
+
+                <div class="blog-divider" style="width: 80%"></div>
+                <div class="row" style="padding: 20px 0">
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <a class="label label-default text-capitalize tag-label">Web design</a>
+                        <a class="label label-default text-capitalize tag-label">Web design</a>
+                        <a class="label label-default text-capitalize tag-label">Web design</a>
+                        <a class="label label-default text-capitalize tag-label">Web design</a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 pull-right" id="post-social-links">
+                        <ul class="list-unstyled">
+                            <li class="pull-left"><a class="post-links" href="#" data-toggle="tooltip"
+                                                     data-placement="bottom" title="Share on Twitter"><i
+                                    class="icon ion-social-twitter-outline"></i></a></li>
+                            <li class="pull-left"><a class="post-links" href="#" data-toggle="tooltip"
+                                                     data-placement="bottom" title="Share on Facebook"><i
+                                    class="icon ion-social-facebook-outline"></i></a></li>
+                            <li class="pull-left">
+                                <a class="post-links" href="#comments" data-toggle="tooltip" data-placement="bottom"
+                                   title="Comments"><i class="icon ion-ios-chatbubble-outline"></i> <span>29</span></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="post-author-container" id="post-author-container-bottom">
+                            <div class="post-author-img">
+                                <div class="text-center">
+                                    <figure class="avatar avatar-xl">
+                                        <img src="img/avatar-1.png"/>
+                                    </figure>
+
+                                </div>
+
+                            </div>
+                            <div class="post-author-name">
+                                <div class="text-center">
+                                    <a class="h3" href="#" id="author-name" data-toggle="popover"
+                                       data-trigger="hover" data-placement="bottom"
+                                       data-content='
+                                       <div class="row">
+                                           <div class="col-xs-8">
+                                                <div class="h3 popover-heading">Dr. Kanyinsola Silva</div>
+                                                <p class="popover-small-text">Surgeon @LUTH</p>
+                                           </div>
+                                           <div class="col-xs-4 pull-right">
+                                                <figure class="avatar avatar-lg">
+                                                    <img src="img/avatar-1.png"/>
+                                                </figure>
+                                           </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                            <div class=col-xs-12>
+                                            <p class="popover-small-text" style="font-weight:bolder; padding-top:0; margin-top:0">Tags</p>
+                                                <div class="popover-tags">
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                    <span class="label label-default text-capitalize tag-label">Web design</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <hr class="popover-divider">
+                                       <div class="row">
+                                           <div class="col-xs-12">
+                                                <p class="popover-small-text">Followed by 217 people</p>
+                                           </div>
+                                       </div>
+                                       '>
+
+                                        <span>Dr. Kanyinsola Silva</span>
+                                    </a>
+
+                                    <p id="author-bio">I'm a web designer and Webflow evangelist.
+                                    </p>
+
+                                    <a href="#" class="transparent-btn" id="author-follow-btn">Follow</a>
+                                </div>
+
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12" id="comments">
+
+                        <div class="h3">Comments</div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <form>
+                                    <div class="form-group inner-addon">
+                                        <div><i class="icon ion-chatbox-working"></i></div>
+                                        <input type="text" class="form-control" placeholder="Write a response...">
+                                    </div>
+                                    <button type="submit" class="btn comment-btn pull-right">Post Comment</button>
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="comment-div">
+                            <div class="commenter-img">
+                                <figure class="avatar avatar-lg">
+                                    <img src="img/avatar-1.png"/>
+                                </figure>
+                                <a class="commenter-name" href="#">Kolawole Tioluwani</a>
+
+                                <div class="comment-time text-uppercase">23 Jan, 2017</div>
+                            </div>
+                            <div class="comment-text">
+                                Damn… I resisted a standing desk for years because Donald Rumsfeld swore by one… but
+                                maybe I should realize it’s the one thing he got right? (squinting). Interesting and
+                                important piece.
+                            </div>
+
+                        </div>
+                        <div class="comment-div">
+                            <div class="commenter-img">
+                                <figure class="avatar avatar-lg">
+                                    <img src="img/avatar-1.png"/>
+                                </figure>
+                                <a class="commenter-name" href="#">Kolawole Tioluwani</a>
+
+                                <div class="comment-time text-uppercase">23 Jan, 2017</div>
+                            </div>
+                            <div class="comment-text">
+                                Damn… I resisted a standing desk for years because Donald Rumsfeld swore by one… but
+                                maybe I should realize it’s the one thing he got right? (squinting). Interesting and
+                                important piece.
+                            </div>
+
+                        </div>
+                        <div class="sk-fading-circle js-loader">
+                            <div class="sk-circle1 sk-circle"></div>
+                            <div class="sk-circle2 sk-circle"></div>
+                            <div class="sk-circle3 sk-circle"></div>
+                            <div class="sk-circle4 sk-circle"></div>
+                            <div class="sk-circle5 sk-circle"></div>
+                            <div class="sk-circle6 sk-circle"></div>
+                            <div class="sk-circle7 sk-circle"></div>
+                            <div class="sk-circle8 sk-circle"></div>
+                            <div class="sk-circle9 sk-circle"></div>
+                            <div class="sk-circle10 sk-circle"></div>
+                            <div class="sk-circle11 sk-circle"></div>
+                            <div class="sk-circle12 sk-circle"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="related-articles text-center">
+                            <div class="h3 text-uppercase">related articles</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel panel-default blog-post">
+                            <div class="panel-heading">
+                                <a class="blog-post-img-container" href="blog_post.html">
+                                    <div class="blog-post-img"></div>
+                                </a>
+                            </div>
+                            <div class="panel-body">
+                                <div class="blog-thumbtext-container">
+                                    <a class="blog-tag text-uppercase" href="">Research</a>
+
+                                    <div class="blog-thumb-date text-uppercase">jan 23, 2017</div>
+                                    <a class="blog-title" href="blog_post.html">Exercise is good for your body</a>
+
+                                    <div class="blog-summary">See how exercise transformed katlin's life — and gave
+                                        her an all-new confidence.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-default blog-post">
+                            <div class="panel-heading">
+                                <a class="blog-post-img-container" href="blog_post.html">
+                                    <div class="blog-post-img"></div>
+                                </a>
+                            </div>
+                            <div class="panel-body">
+                                <div class="blog-thumbtext-container">
+                                    <a class="blog-tag text-uppercase" href="">Diet & Exercise</a>
+
+                                    <div class="blog-thumb-date text-uppercase">jan 23, 2017</div>
+                                    <a class="blog-title" href="blog_post.html">6 great reasons to get in shape in
+                                        2017</a>
+
+                                    <div class="blog-summary">See how exercise transformed katlin's life — and gave
+                                        her an all-new confidence.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-default blog-post">
+                            <div class="panel-heading">
+                                <a class="blog-post-img-container" href="#">
+                                    <div class="blog-post-img"></div>
+                                </a>
+                            </div>
+                            <div class="panel-body">
+                                <div class="blog-thumbtext-container">
+                                    <a class="blog-tag text-uppercase" href="">Surgery</a>
+
+                                    <div class="blog-thumb-date text-uppercase">jan 23, 2017</div>
+                                    <a class="blog-title" href="#">Exercise is good for your body</a>
+
+                                    <div class="blog-summary">See how exercise transformed katlin's life — and gave
+                                        her an all-new confidence.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <p class="footer-main-text">HelloCare is a registered trademark of Intelligent Campaign Hub.
+                    HelloCare is a financial service built in partnership with Access Bank Nigeria to push financial
+                    inclusion
+                    and make basic banking services accessible to the unbanked and underbanked.</p>
+
+                <p class="footer-main-text">&copy; HelloCare 2017. All rights reserved</p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">social</li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ion-social-facebook"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ion-social-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ion-social-instagram-outline"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">company</li>
+                            <li>
+                                <a href="#">
+                                    <span>About Us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Partners</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Media</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">legal</li>
+                            <li>
+                                <a href="#">
+                                    <span>Terms</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Privacy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>FAQ</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/blog.js"></script>
+</html>

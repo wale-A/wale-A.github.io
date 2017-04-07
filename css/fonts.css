@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Lora';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Lora-Regular.ttf') format('ttf');
+    src: url('../fonts/lora-regular-webfont.woff') format('woff'), url('../fonts/lora-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Arsenal';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Arsenal-Bold.ttf') format('ttf');
+    src: url('../fonts/arsenal-bold-webfont.woff') format('woff'), url('../fonts/arsenal-bold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'GT-Walsheim';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/gt-walsheim-pro-trial-thin-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GT-Walsheim';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/gt-walsheim-pro-trial-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GT-Walsheim';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/gt-walsheim-pro-trial-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GT-Walsheim';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/gt-walsheim-pro-trial-ultra-bold-webfont.woff') format('woff');
+}

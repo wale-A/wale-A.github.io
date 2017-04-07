@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Patient Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top" id="blog-navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#blog-navbar"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/white-logo.png" class="app-logo white"
+                                                      id="white-logo"></a>
+                <a class="navbar-brand" href="#"><img src="img/blue-logo.png" class="app-logo white" id="blue-logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="blog-navbar">
+                <ul class="nav navbar-nav navbar-right blog-nav-links">
+                    <li><a href="#" class="text-capitalize js-nav-links" id="blog-link">Blog</a></li>
+                    <li><a href="#" class="text-capitalize js-nav-links" id="login-link">Sign In</a></li>
+                    <li><a href="#" class="text-capitalize js-nav-links" id="sign-up-link">Sign Up</a></li>
+                    <li>
+                        <a href="#" class="text-capitalize js-nav-links" id="profile-link">
+                            <figure class="avatar avatar-sm">
+                                <img src="img/avatar-1.png">
+                            </figure>
+                            <span style="font-weight: 300">Dr Silva</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="text-capitalize js-nav-links log-out-link" id="log-out-link">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="top-btn js-top-btn">
+        <i class="icon ion-ios-arrow-up"></i>
+    </div>
+    <a class="compose-post-btn js-compose-btn" data-toggle="tooltip" data-placement="top" title="Compose blog post">
+        <i class="icon ion-compose"></i>
+    </a>
+
+    <div class="profile-hero">
+        <div class="profile-hero-overlay"></div>
+    </div>
+
+    <div class="container">
+        <div class="user-profile-content">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="user-details">
+                        <div class="user-avatar">
+                            <figure class="avatar avatar-xl">
+                                <img src="img/avatar-1.png" alt="user profile image">
+                            </figure>
+                        </div>
+                        <div class="user-name h3">Dr Silva</div>
+                        <p class="user-location"><i class="icon ion-android-pin"></i> Lagos Nigeria</p>
+
+                        <div class="user-social-stats">
+                            <ul class="list-unstyled">
+                                <li class="pull-left">
+                                    <p>32</p>
+
+                                    <p>Followers</p>
+                                </li>
+                                <li class="pull-left">
+                                    <p>120</p>
+
+                                    <p>Following</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="transparent-btn">Follow</a>
+
+                        <div class="user-interests">
+                            <div class="h3 title">Interests</div>
+                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                            <a class="label label-default text-capitalize tag-label">Web design</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="user-publications">
+                        <div class="publication-list">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="user-bio-nav">
+                                        <ul class="nav nav-pills">
+                                            <li class="active"><a class="bio-nav-links h3" href="#publications"
+                                                                  data-toggle="tab">Publications</a></li>
+                                            <li><a class="bio-nav-links h3" href="#file" id="file-link"
+                                                   data-toggle="tab">File</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="publications">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default blog-post">
+                                                <div class="panel-heading">
+                                                    <a class="blog-post-img-container" href="#">
+                                                        <div class="blog-post-img"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="blog-thumbtext-container">
+                                                        <a class="blog-tag text-uppercase" href="">Surgery</a>
+
+                                                        <div class="blog-thumb-date text-uppercase">jan 23, 2017</div>
+                                                        <a class="blog-title" href="#">Exercise is good for your
+                                                            body</a>
+
+                                                        <div class="blog-summary">See how exercise transformed katlin's
+                                                            life — and gave
+                                                            her an all-new confidence.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default blog-post">
+                                                <div class="panel-heading">
+                                                    <a class="blog-post-img-container" href="#">
+                                                        <div class="blog-post-img"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="blog-thumbtext-container">
+                                                        <a class="blog-tag text-uppercase" href="">Surgery</a>
+
+                                                        <div class="blog-thumb-date text-uppercase">jan 23, 2017</div>
+                                                        <a class="blog-title" href="#">Exercise is good for your
+                                                            body</a>
+
+                                                        <div class="blog-summary">See how exercise transformed katlin's
+                                                            life — and gave
+                                                            her an all-new confidence.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default blog-post">
+                                                <div class="panel-heading">
+                                                    <a class="blog-post-img-container" href="#">
+                                                        <div class="blog-post-img"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="blog-thumbtext-container">
+                                                        <a class="blog-tag text-uppercase" href="">Surgery</a>
+
+                                                        <div class="blog-thumb-date text-uppercase">jan 23, 2017</div>
+                                                        <a class="blog-title" href="#">Exercise is good for your
+                                                            body</a>
+
+                                                        <div class="blog-summary">See how exercise transformed katlin's
+                                                            life — and gave
+                                                            her an all-new confidence.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default blog-post">
+                                                <div class="panel-heading">
+                                                    <a class="blog-post-img-container" href="#">
+                                                        <div class="blog-post-img"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="blog-thumbtext-container">
+                                                        <a class="blog-tag text-uppercase" href="">Surgery</a>
+
+                                                        <div class="blog-thumb-date text-uppercase">jan 23, 2017</div>
+                                                        <a class="blog-title" href="#">Exercise is good for your
+                                                            body</a>
+
+                                                        <div class="blog-summary">See how exercise transformed katlin's
+                                                            life — and gave
+                                                            her an all-new confidence.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default blog-post">
+                                                <div class="panel-heading">
+                                                    <a class="blog-post-img-container" href="#">
+                                                        <div class="blog-post-img"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="blog-thumbtext-container">
+                                                        <a class="blog-tag text-uppercase" href="">Surgery</a>
+
+                                                        <div class="blog-thumb-date text-uppercase">jan 23, 2017</div>
+                                                        <a class="blog-title" href="#">Exercise is good for your
+                                                            body</a>
+
+                                                        <div class="blog-summary">See how exercise transformed katlin's
+                                                            life — and gave
+                                                            her an all-new confidence.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default blog-post">
+                                                <div class="panel-heading">
+                                                    <a class="blog-post-img-container" href="#">
+                                                        <div class="blog-post-img"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="blog-thumbtext-container">
+                                                        <a class="blog-tag text-uppercase" href="">Surgery</a>
+
+                                                        <div class="blog-thumb-date text-uppercase">jan 23, 2017</div>
+                                                        <a class="blog-title" href="#">Exercise is good for your
+                                                            body</a>
+
+                                                        <div class="blog-summary">See how exercise transformed katlin's
+                                                            life — and gave
+                                                            her an all-new confidence.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane" id="file">
+                                    <div class="row">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <p class="footer-main-text">HelloCare is a registered trademark of Intelligent Campaign Hub.
+                    HelloCare is a financial service built in partnership with Access Bank Nigeria to push financial
+                    inclusion
+                    and make basic banking services accessible to the unbanked and underbanked.</p>
+
+                <p class="footer-main-text">&copy; HelloCare 2017. All rights reserved</p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">social</li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ion-social-facebook"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ion-social-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ion-social-instagram-outline"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">company</li>
+                            <li>
+                                <a href="#">
+                                    <span>About Us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Partners</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Media</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">legal</li>
+                            <li>
+                                <a href="#">
+                                    <span>Terms</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Privacy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>FAQ</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/blog.js"></script>
+<script>
+    $('.profile-hero').css({background: 'url("img/img1.jpg") no-repeat center center / cover'})
+</script>
+</html>
